@@ -1,0 +1,35 @@
+@import 'c/sharedStyleResource';
+
+.container {
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.companyLogo {
+    max-height: 72px;
+}
+
+.navItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.navItems li {
+    list-style: none;
+    border-radius: 0.3em;
+}
+.navItems li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.6em;
+    box-sizing: border-box;
+    border-radius: 1em;
+}
+.navItems li a:hover {
+    background-color: rgba(255,255,255, 0.4);
+
+}
