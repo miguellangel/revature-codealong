@@ -1,0 +1,45 @@
+<template>
+    <div class="hero">
+        <div class="caption"><h1>WHERE A KID CAN BE A KID</h1></div>
+        <div class="action">
+            <button onclick={navigateToFeaturedItems}>Shop Featured Items</button>
+        </div>
+    </div>
+    <div class="section shopCategories">
+        <!-- each of these include a separate wire service -->
+        <div class="productSection">
+            <h2>SHOP ALL LEGO</h2>
+            <template lwc-if={legos}>
+                <template for:each="legos" for:item="lego">
+                    <lightning-card key={legoProduct.Id}>
+                        <p>{legoProduct.Name}</p>
+                    </lightning-card>
+                </template>
+            </template>
+
+        </div>
+        <div class="productSection">
+            <h2>SHOP ALL BARBIE</h2>
+            <template lwc-if={barbies}>
+                <template for:each="barbies" for:item="barbie">
+                    <lightning-card key={barbieProduct.Id}>
+                        <p>{barbieProduct.Name}</p>
+                    </lightning-card>
+                </template>
+            </template>
+
+        </div>
+        <div class="productSection">
+            <h2>SHOP ALL HOT WHEELS</h2>
+            <template lwc-if={hotwheels}>
+                <template for:each="hotwheels" for:item="hotwheel">
+                    <lightning-card key={hotWheelProduct.Id}>
+                        <p>{hotwheelProduct.Name}</p>
+                    </lightning-card>
+                </template>
+            </template>
+
+        </div>
+        
+    </div>
+</template>

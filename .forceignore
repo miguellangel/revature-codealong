@@ -10,3 +10,28 @@ package.xml
 
 # LWC Jest
 **/__tests__/**
+
+# always ignore
+**/appMenus/**
+**/profiles/**
+**/SiteSamples/**
+**/audience/**
+**/dashboards/**
+**/digitalExperienceConfigs/**
+**/digitalExperiences/**
+**/navigationMenus/**
+**/networkBranding/**
+**/networks/**
+**/reports/**
+**/reportTypes/**
+**/sites/**
+
+
+# will comment out as needed
+**/classes/**
+**/aura/**
+**/pages/**
+**/staticresources/**
+
+# this is for visualforce: 
+**/components/**
